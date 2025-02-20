@@ -1,0 +1,37 @@
+// Определение переменных
+$primary-color: #4CAF50; // Зелёный
+$secondary-color: #388E3C; // Тёмно-зелёный
+$text-color: #2E2E2E; // Тёмно-серый
+$background-color: #F0F0F0; // Светло-серый
+$font-family: 'Arial', sans-serif;
+
+// Общие стили
+body {
+    font-family: $font-family;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+.text-block {
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// Кнопка
+.custom-button {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        background-color: $secondary-color;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+}
